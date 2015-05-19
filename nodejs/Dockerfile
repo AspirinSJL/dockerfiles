@@ -1,5 +1,6 @@
 FROM ubuntu:14.04
 
+# Learn from google, but use taobao mirror and different version
 RUN apt-get update -y && apt-get install --no-install-recommends -y -q curl python build-essential git ca-certificates
 RUN mkdir /nodejs && curl http://npm.taobao.org/mirrors/node/latest/node-v0.12.3-linux-x64.tar.gz | tar xvzf - -C /nodejs --strip-components=1
 
