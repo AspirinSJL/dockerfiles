@@ -1,5 +1,6 @@
 FROM aspirinsjl/nodejs
 
+# Note that REDIS_SERVER_VERSION is not used yet
 ENV REDIS_SERVER_VERSION=3.0.1 \
     MONGODB_VERSION=3.0.3
 
