@@ -6,7 +6,7 @@ ENV REDIS_SERVER_VERSION=3.0.1 \
 # Learn from tutum, but conservatively keep apt list
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv C7917B12 && \
     apt-get update && \
-    DEBIAN_FRONTEND=noninteractive apt-get install -y redis-server=${REDIS_SERVER_VERSION} && \
+    DEBIAN_FRONTEND=noninteractive apt-get install -y redis-server && \
     apt-get clean 
 
 # Learn from mongodb official guide
