@@ -1,8 +1,7 @@
 FROM aspirinsjl/genieacs
 
-# RUN service mongod start
-# RUN redis-server
-
-CMD service mongod start && \
-    redis-server && \
-    genieacs-cwmp
+# Learn from truongsinh/nodejs-mongodb-redis
+CMD mongod --fork -f /etc/mongod.conf && \
+    redis-server /etc/redis/redis.conf && \
+    genieacs-cwmp && \
+    bash
