@@ -16,5 +16,5 @@ RUN git clone https://github.com/zaidka/genieacs-gui.git /opt/git/genieacs-gui &
     cp config/parameters_edit-sample.yml config/parameters_edit.yml && \
     cp config/parameter_renderers-sample.yml config/parameter_renderers.yml && \
     cp config/roles-sample.yml config/roles.yml && \
-    cp config/users-sample.yml config/users.yml && \
-    bundle
+    cp config/users-sample.yml config/users.yml
+#    bundle
