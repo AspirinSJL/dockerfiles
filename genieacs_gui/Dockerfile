@@ -4,6 +4,8 @@ FROM aspirinsjl/genieacs
 # RUN rm /bin/sh && \
 #    ln -s /bin/bash /bin/sh
 
+EXPOSE 7547 3000
+
 RUN /bin/bash -c "gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 && \
     \curl -sSL https://get.rvm.io | bash -s stable --rails && \
     source /etc/profile.d/rvm.sh && \
